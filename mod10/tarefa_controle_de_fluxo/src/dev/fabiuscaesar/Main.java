@@ -27,7 +27,7 @@ public class Main {
 
         // Cabeçalho da "tabela"
         System.out.printf("%-10s | %-12s | %-10s%n", "Aluno", "Média Final", "Situação");
-        System.out.println("===========|==============|===========");
+        System.out.println("===========|==============|============");
 
         for (Aluno aluno : alunos) {
             NotasEMedia avaliador = new NotasEMedia();
@@ -39,7 +39,7 @@ public class Main {
             String situacao = avaliador.verificarAprovacao(media);
 
             System.out.printf("%-10s | %-12.1f | %-10s%n", aluno.getNome(), media, situacao);
-            System.out.println("-----------|--------------|-----------");
+            System.out.println("-----------|--------------|------------");
         }
     }
 }
