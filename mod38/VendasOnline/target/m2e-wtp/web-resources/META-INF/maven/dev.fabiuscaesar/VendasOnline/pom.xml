@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>dev.fabiuscaesar</groupId>
+  <artifactId>VendasOnline</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  <properties>
+    <maven.compiler.release>11</maven.compiler.release>
+  </properties>
+
+  <dependencies>
+  	<!-- API do Java EE 8 vem do servidor (WildFly 23): -->
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-web-api</artifactId>
+      <version>8.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Componentes visuais -->
+    <dependency>
+      <groupId>org.primefaces</groupId>
+      <artifactId>primefaces</artifactId>
+      <version>11.0.0</version>
+    </dependency>
+
+    <!-- Driver do Postgres: o servidor vai fornecer (module) - provided -->
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.3.2</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    <!-- Provider JPA para os TESTES (no runtime o WildFly fornece) -->
+	<dependency>
+	  <groupId>org.hibernate</groupId>
+	  <artifactId>hibernate-core</artifactId>
+	  <version>5.3.20.Final</version>
+	  <scope>test</scope>
+	</dependency>
+	
+	<!-- Banco em memória para testes -->
+	<dependency>
+	  <groupId>com.h2database</groupId>
+	  <artifactId>h2</artifactId>
+	  <version>2.2.224</version>
+	  <scope>test</scope>
+	</dependency>
+	
+	<!-- Framework de testes (compatível com os testes legados) -->
+	<dependency>
+	  <groupId>junit</groupId>
+	  <artifactId>junit</artifactId>
+	  <version>4.13.2</version>
+	  <scope>test</scope>
+	</dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration><release>11</release></configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+</project>

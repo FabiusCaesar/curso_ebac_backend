@@ -1,0 +1,22 @@
+<ui:composition
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <h:form id="menuForm">
+        <p:menubar autoDisplay="true">
+            <p:submenu label="Cadastro" icon="pi pi-users">
+                <p:menuitem value="Cliente" outcome="/cliente/list" icon="pi pi-id-card"/>
+                <p:menuitem value="Produto" outcome="/produto/list" icon="pi pi-box"/>
+            </p:submenu>
+
+            <p:submenu label="Movimentação" icon="pi pi-refresh">
+                <p:menuitem value="Venda" outcome="/venda/list" icon="pi pi-shopping-cart"/>
+                <p:menuitem value="Estoque" outcome="/estoque/list" icon="pi pi-inbox"/>
+            </p:submenu>
+        </p:menubar>
+    </h:form>
+
+</ui:composition>

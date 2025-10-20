@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<f:view>
+  <h:head>
+    <title>Produtos</title>
+    <h:outputStylesheet>
+      .page {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 1.5rem 1rem 3rem;
+      }
+      .title {
+        margin: 1rem 0 1rem;
+        text-align: center;
+      }
+      /* ações do formulário */
+      .actions {
+        display: flex;
+        gap: .75rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: .5rem;
+      }
+      /* ===== ações por linha na tabela (respiro entre os botões) ===== */
+      .table-actions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;              /* espaço entre os botões */
+        flex-wrap: wrap;
+      }
+      /* ícone centrado e altura/largura confortáveis nos arredondados */
+      .table-actions .p-button.p-button-rounded{
+        width: 2.25rem;
+        height: 2.25rem;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </h:outputStylesheet>
+  </h:head>
+
+  <h:body>
+    <!-- Menubar -->
+    <h:form id="menuForm">
+      <ui:include src="/WEB-INF/includes/menubar.xhtml" />
+    </h:form>
+
+    <div class="page">
+      <p:growl id="growl" showDetail="true" life="3000" />
+
+      <!-- Formulário (primeiro) -->
+      <h2 class="title">#{produtoController.update ? 'Atualizar Produto' : 'Novo Produto'}</h2>
+      <h:form id="formProduto">
+        <p:panel header="Dados do Produto" toggleable="true" collapsed="false" toggleSpeed="150">
+          <p:panelGrid columns="2" layout="grid" styleClass="p-fluid">
+
+            <p:outputLabel for="codigo" value="Código" />
+            <p:inputText id="codigo" value="#{produtoController.produto.codigo}" required="true" maxlength="10" />
+
+            <p:outputLabel for="nome" value="Nome" />
+            <p:inputText id="nome" value="#{produtoController.produto.nome}" required="true" maxlength="50" />
+
+            <p:outputLabel for="modelo" value="Modelo" />
+            <p:inputText id="modelo" value="#{produtoController.produto.modelo}" required="true" maxlength="50" />
+
+            <p:outputLabel for="descricao" value="Descrição" />
+            <p:inputText id="descricao" value="#{produtoController.produto.descricao}" required="true" maxlength="100" />
+
+            <p:outputLabel for="valor" value="Valor" />
+            <p:inputNumber id="valor" value="#{produtoController.produto.valor}" required="true"
+                           decimalPlaces="2" decimalSeparator="," thousandSeparator="."
+                           symbol="R$ " symbolPosition="p" />
+          </p:panelGrid>
+
+          <div class="actions">
+            <p:commandButton value="Cadastrar"
+                             actionListener="#{produtoController.add}"
+                             update="formProduto tabela growl"
+                             rendered="#{!produtoController.update}" icon="pi pi-check" />
+
+            <p:commandButton value="Atualizar"
+                             actionListener="#{produtoController.update}"
+                             update="formProduto tabela growl"
+                             rendered="#{produtoController.update}" icon="pi pi-save" />
+
+            <p:commandButton value="Cancelar"
+                             actionListener="#{produtoController.cancel}"
+                             update="formProduto" immediate="true"
+                             styleClass="p-button-secondary" icon="pi pi-times" />
+
+            <p:commandButton value="Voltar"
+                             action="#{produtoController.voltarTelaInicial()}"
+                             ajax="false" styleClass="p-button-outlined" icon="pi pi-arrow-left" />
+          </div>
+        </p:panel>
+      </h:form>
+
+      <!-- Lista (depois) -->
+      <h2 class="title">Produtos Cadastrados</h2>
+      <h:form id="tabela">
+        <p:dataTable value="#{produtoController.produtos}" var="p" paginator="true" rows="10"
+                     responsiveLayout="scroll" emptyMessage="Nenhum produto encontrado.">
+
+          <p:column headerText="ID" style="width:80px;text-align:center">
+            <h:outputText value="#{p.id}" />
+          </p:column>
+
+          <p:column headerText="Código">
+            <h:outputText value="#{p.codigo}" />
+          </p:column>
+
+          <p:column headerText="Nome">
+            <h:outputText value="#{p.nome}" />
+          </p:column>
+
+          <p:column headerText="Modelo">
+            <h:outputText value="#{p.modelo}" />
+          </p:column>
+
+          <p:column headerText="Descrição">
+            <h:outputText value="#{p.descricao}" />
+          </p:column>
+
+          <p:column headerText="Valor" style="text-align:right">
+            <h:outputText value="#{p.valor}">
+              <f:convertNumber type="currency" currencySymbol="R$ " minFractionDigits="2" maxFractionDigits="2"/>
+            </h:outputText>
+          </p:column>
+
+          <p:column headerText="Ações" style="text-align:center; width:160px">
+            <div class="table-actions">
+              <p:commandButton icon="pi pi-pencil" title="Editar"
+                               actionListener="#{produtoController.edit(p)}"
+                               update=":formProduto :growl"
+                               styleClass="p-button-rounded p-button-warning" />
+              <p:commandButton icon="pi pi-trash" title="Excluir"
+                               actionListener="#{produtoController.delete(p)}"
+                               update="tabela :growl" styleClass="p-button-rounded p-button-danger" process="@this">
+                <p:confirm header="Confirmação"
+                           message="Deseja excluir este produto?"
+                           icon="pi pi-exclamation-triangle" />
+              </p:commandButton>
+            </div>
+          </p:column>
+        </p:dataTable>
+
+        <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+          <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="pi pi-check" />
+          <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no ui-button-flat" icon="pi pi-times" />
+        </p:confirmDialog>
+      </h:form>
+    </div>
+  </h:body>
+</f:view>
+</html>

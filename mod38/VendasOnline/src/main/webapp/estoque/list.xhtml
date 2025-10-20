@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<f:view>
+  <h:head>
+    <title>Estoque</title>
+    <h:outputStylesheet>
+      .page { max-width: 800px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+      .title { margin: .5rem 0 1rem; text-align: center; }
+      .right { text-align: right; }
+    </h:outputStylesheet>
+  </h:head>
+
+  <h:body>
+    <h:form id="menuForm">
+      <ui:include src="/WEB-INF/includes/menubar.xhtml" />
+    </h:form>
+
+    <div class="page">
+      <p:growl id="growl" showDetail="true" life="3000" />
+      <h2 class="title">Estoque</h2>
+
+      <h:form id="formEstoque">
+        <p:panel header="Consultar / Atualizar Estoque" toggleable="true" collapsed="false" toggleSpeed="150">
+          <p:panelGrid columns="2" layout="grid" styleClass="p-fluid">
+
+            <p:outputLabel for="produtoId" value="ID do Produto" />
+            <p:inputNumber id="produtoId" value="#{estoqueController.produtoId}" decimalPlaces="0" minValue="1" />
+
+            <p:outputLabel value="Quantidade atual" />
+            <h:panelGroup>
+              <h:outputText value="#{estoqueController.quantidadeAtual}" />
+              <p:commandButton value="Consultar"
+                               action="#{estoqueController.consultar}"
+                               update="@form growl" icon="pi pi-search"
+                               style="margin-left:.5rem" />
+            </h:panelGroup>
+
+            <p:outputLabel for="qtd" value="Alterar em (unidades)" />
+            <p:inputNumber id="qtd" value="#{estoqueController.quantidade}" decimalPlaces="0" />
+
+          </p:panelGrid>
+
+          <div class="right" style="margin-top: .75rem;">
+            <p:commandButton value="Criar registro (se ausente)"
+                             action="#{estoqueController.criarSeAusente}"
+                             update="@form growl" icon="pi pi-plus-circle"
+                             styleClass="ui-button-secondary" />
+            <p:spacer width="8" />
+            <p:commandButton value="+ Adicionar"
+                             action="#{estoqueController.incrementar}"
+                             update="@form growl" icon="pi pi-plus" />
+            <p:spacer width="8" />
+            <p:commandButton value="− Remover"
+                             action="#{estoqueController.decrementar}"
+                             update="@form growl" icon="pi pi-minus"
+                             styleClass="ui-button-danger" />
+          </div>
+        </p:panel>
+      </h:form>
+    </div>
+  </h:body>
+</f:view>
+</html>
