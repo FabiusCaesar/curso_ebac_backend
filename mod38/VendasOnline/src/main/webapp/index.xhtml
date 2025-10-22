@@ -1,9 +1,128 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
-  <h:head><title>Vendas Online</title></h:head>
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<f:view>
+  <h:head>
+    <title>Vendas Online</title>
+    <h:outputStylesheet>
+      .page {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 1.5rem 1rem 3rem;
+      }
+      .title {
+        margin: 1rem 0 1rem;
+        text-align: center;
+        font-family: inherit !important; /* mesma fonte das demais telas */
+      }
+      .intro {
+        margin: 0 auto 1rem;
+        max-width: 900px;
+        text-align: center;
+      }
+
+      /* grade de atalhos */
+      .tiles {
+        max-width: 900px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+        gap: 1rem;
+        /* garante herança da fonte dentro da grade */
+        font-family: inherit;
+      }
+      @media (max-width: 700px) {
+        .tiles { grid-template-columns: 1fr; }
+      }
+
+      /* "card" clicável */
+      .tile {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        padding: 1rem 1.25rem;
+        border: 1px solid var(--surface-d, #ddd);
+        border-radius: 10px;
+        text-decoration: none;
+        color: inherit;
+        background: var(--surface-a, #fff);
+        transition: transform .1s ease, box-shadow .1s ease, border-color .1s ease;
+        font-family: inherit; /* herda a fonte do container/ui-widget */
+      }
+      .tile:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 18px rgba(0,0,0,.06);
+        border-color: var(--primary-color, #3B82F6);
+      }
+      .tile .icon {
+        font-size: 1.4rem;
+        opacity: .85;
+        margin-bottom: .25rem;
+        /* os ícones continuam com a fonte de ícones do PrimeFaces (.pi define isso) */
+      }
+      .tile .label {
+        font-weight: 600;
+        font-size: 1.05rem;
+        font-family: inherit; /* garante mesma fonte do resto */
+      }
+      .tile .hint {
+        opacity: .8;
+        font-size: .9rem;
+        font-family: inherit; /* garante mesma fonte do resto */
+      }
+    </h:outputStylesheet>
+  </h:head>
+
   <h:body>
-    <p:outputLabel value="Olá! Bem-vindo à loja online."/>
+    <!-- Menubar -->
+    <h:form id="menuForm">
+      <ui:include src="/WEB-INF/fragments/menubar.xhtml" />
+    </h:form>
+
+    <div class="page">
+      <p:growl id="growl" showDetail="true" life="3000" />
+
+      <h:panelGroup layout="block" styleClass="ui-widget">
+        <h2 class="title">Bem-vindo(a) ao Vendas Online</h2>
+      </h:panelGroup>
+
+      <p:panel styleClass="intro" header="Escolha um módulo">
+        <h:outputText value="Use os atalhos abaixo para acessar os módulos do sistema." />
+      </p:panel>
+
+      <!-- envolve a grade em ui-widget para herdar tipografia do tema -->
+      <h:panelGroup layout="block" styleClass="ui-widget">
+        <div class="tiles">
+          <h:link outcome="/produto/list.xhtml" styleClass="tile">
+            <span class="pi pi-box icon" aria-hidden="true"></span>
+            <span class="label">Produtos</span>
+            <span class="hint">Cadastrar, editar e listar</span>
+          </h:link>
+
+          <h:link outcome="/cliente/list.xhtml" styleClass="tile">
+            <span class="pi pi-users icon" aria-hidden="true"></span>
+            <span class="label">Clientes</span>
+            <span class="hint">Cadastro e manutenção</span>
+          </h:link>
+
+          <h:link outcome="/venda/list.xhtml" styleClass="tile">
+            <span class="pi pi-shopping-cart icon" aria-hidden="true"></span>
+            <span class="label">Vendas</span>
+            <span class="hint">Nova venda e histórico</span>
+          </h:link>
+
+          <h:link outcome="/estoque/list.xhtml" styleClass="tile">
+            <span class="pi pi-database icon" aria-hidden="true"></span>
+            <span class="label">Estoque</span>
+            <span class="hint">Ajuste de quantidades</span>
+          </h:link>
+        </div>
+      </h:panelGroup>
+    </div>
   </h:body>
+</f:view>
 </html>
