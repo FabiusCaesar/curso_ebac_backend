@@ -50,10 +50,13 @@ public class VendaController implements Serializable {
     private Integer quantidadeProduto;
     private Produto produtoSelecionado;
 
+    // ===== NOVO: barra de busca por código =====
+    private String codigoBusca;
+
     @PostConstruct
     public void init() {
         try {
-            this.venda = new Venda();                // coleção de produtos já vem inicializada na entidade
+            this.venda = new Venda();
             this.vendas = vendaService.buscarTodos();
             this.update = false;
         } catch (Exception e) {
@@ -101,18 +104,12 @@ public class VendaController implements Serializable {
                 addMsgErr("Adicione pelo menos um produto");
                 return;
             }
-
-            // gera código automático se vier vazio
             if (this.venda.getCodigo() == null || this.venda.getCodigo().trim().isEmpty()) {
                 this.venda.setCodigo(gerarCodigoVendaUnico());
             }
-
-            // data (se usuário informar no calendário)
             if (dataVenda != null) {
                 this.venda.setDataVenda(dataVenda.atStartOfDay(ZONE).toInstant());
             }
-
-            // valorTotal é recalculado dentro da entidade conforme os itens são alterados
 
             vendaService.cadastrar(this.venda);
             this.vendas = vendaService.buscarTodos();
@@ -138,46 +135,34 @@ public class VendaController implements Serializable {
     }
 
     public void salvar() {
-        if (Boolean.TRUE.equals(getIsUpdate())) {
-            update();
-        } else {
-            add();
-        }
+        if (Boolean.TRUE.equals(getIsUpdate())) update();
+        else add();
     }
 
-    // Para converter Instant no xhtml com <f:convertDateTime>
     public java.util.Date toDate(java.time.Instant i) {
         return i == null ? null : java.util.Date.from(i);
     }
 
-    // ===== Itens da venda (usando as regras da entidade Venda) =====
     public void adicionarProduto() {
         if (produtoSelecionado == null || quantidadeProduto == null || quantidadeProduto <= 0) return;
-
-        // Usa o método de domínio -> valida status e recalcula total
         this.venda.adicionarProduto(produtoSelecionado, quantidadeProduto);
-
-        // limpar seleção
         this.produtoSelecionado = null;
         this.quantidadeProduto = null;
     }
 
     public void removerProduto() {
         if (produtoSelecionado == null) return;
-
-        // remove a linha inteira: procura a quantidade atual e remove tudo
         Optional<ProdutoQuantidade> op = this.venda.getProdutos().stream()
                 .filter(pq -> pq.getProduto().getId().equals(produtoSelecionado.getId()))
                 .findFirst();
         op.ifPresent(pq -> this.venda.removerProduto(produtoSelecionado, pq.getQuantidade()));
-
         this.produtoSelecionado = null;
         this.quantidadeProduto = null;
     }
 
     public void removerProduto(ProdutoQuantidade pq) {
         if (pq == null) return;
-        this.venda.removerProduto(pq.getProduto(), pq.getQuantidade()); // entidade recalcula total
+        this.venda.removerProduto(pq.getProduto(), pq.getQuantidade());
     }
 
     public void edit(Venda v) {
@@ -196,21 +181,38 @@ public class VendaController implements Serializable {
         }
     }
 
-    // ======= Autocomplete =======
-    public List<Cliente> filtrarClientes(String query) {
-        return this.clienteService.filtrarClientes(query);
+    // ===== NOVO: Busca por código (barra acima da tabela) =====
+    public void buscarPorCodigo() {
+        try {
+            if (codigoBusca == null || codigoBusca.trim().isEmpty()) {
+                addMsgWarn("Informe o código da venda para buscar.");
+                return;
+            }
+            Venda encontrada = vendaService.buscarPorCodigo(codigoBusca.trim());
+            if (encontrada != null) {
+                this.venda = encontrada;
+                this.update = true;
+                this.dataVenda = (encontrada.getDataVenda() == null) ? null
+                        : LocalDate.ofInstant(encontrada.getDataVenda(), ZONE);
+                addMsgInfo("Venda carregada para edição.");
+            } else {
+                addMsgWarn("Venda não encontrada.");
+            }
+        } catch (Exception e) {
+            addMsgErr("Erro na busca.");
+        }
     }
 
+    // ===== Autocomplete =====
+    public List<Cliente> filtrarClientes(String query) { return this.clienteService.filtrarClientes(query); }
     public List<Produto> filtrarProdutos(String query) {
         String q = (query == null ? "" : query.toLowerCase());
         try {
             return produtoService.buscarTodos().stream()
-                .filter(p ->
-                    (p.getNome() != null && p.getNome().toLowerCase().contains(q)) ||
-                    (p.getModelo() != null && p.getModelo().toLowerCase().contains(q)) ||
-                    (p.getDescricao() != null && p.getDescricao().toLowerCase().contains(q)) ||
-                    (p.getCodigo() != null && p.getCodigo().toLowerCase().contains(q))
-                )
+                .filter(p -> (p.getNome()!=null && p.getNome().toLowerCase().contains(q))
+                          || (p.getModelo()!=null && p.getModelo().toLowerCase().contains(q))
+                          || (p.getDescricao()!=null && p.getDescricao().toLowerCase().contains(q))
+                          || (p.getCodigo()!=null && p.getCodigo().toLowerCase().contains(q)))
                 .collect(Collectors.toList());
         } catch (Exception e) {
             addMsgErr("Erro ao filtrar produtos");
@@ -220,15 +222,18 @@ public class VendaController implements Serializable {
 
     public String voltarTelaInicial() { return "/index.xhtml?faces-redirect=true"; }
 
-    // ===== mensagens =====
+    /* ===== mensagens ===== */
     private void addMsgInfo(String m) {
         FacesContext.getCurrentInstance().addMessage("growl", new FacesMessage(FacesMessage.SEVERITY_INFO, m, null));
+    }
+    private void addMsgWarn(String m) {
+        FacesContext.getCurrentInstance().addMessage("growl", new FacesMessage(FacesMessage.SEVERITY_WARN, m, null));
     }
     private void addMsgErr(String m) {
         FacesContext.getCurrentInstance().addMessage("growl", new FacesMessage(FacesMessage.SEVERITY_ERROR, m, null));
     }
 
-    // ===== geração de código (único) =====
+    /* ===== geração de código (único) ===== */
     private String gerarCodigoVendaUnico() {
         for (int i = 0; i < 5; i++) {
             String c = gerarCodigoVenda();
@@ -236,19 +241,18 @@ public class VendaController implements Serializable {
                 Venda existente = vendaService.buscarPorCodigo(c);
                 if (existente == null) return c;
             } catch (Exception e) {
-                return c; // alguns serviços lançam exceção quando não encontram -> consideramos livre
+                return c;
             }
         }
         return "V-" + System.currentTimeMillis();
     }
-
     private String gerarCodigoVenda() {
         String data = LocalDate.now(ZONE).format(java.time.format.DateTimeFormatter.BASIC_ISO_DATE);
         int rnd = ThreadLocalRandom.current().nextInt(1000, 10000);
         return "V-" + data + "-" + rnd;
     }
 
-    // ===== getters/setters =====
+    /* ===== getters/setters ===== */
     public Venda getVenda() { return venda; }
     public void setVenda(Venda venda) { this.venda = venda; }
     public Collection<Venda> getVendas() { return vendas; }
@@ -264,4 +268,7 @@ public class VendaController implements Serializable {
     public void setQuantidadeProduto(Integer quantidadeProduto) { this.quantidadeProduto = quantidadeProduto; }
     public Produto getProdutoSelecionado() { return produtoSelecionado; }
     public void setProdutoSelecionado(Produto produtoSelecionado) { this.produtoSelecionado = produtoSelecionado; }
+
+    public String getCodigoBusca() { return codigoBusca; }
+    public void setCodigoBusca(String codigoBusca) { this.codigoBusca = codigoBusca; }
 }

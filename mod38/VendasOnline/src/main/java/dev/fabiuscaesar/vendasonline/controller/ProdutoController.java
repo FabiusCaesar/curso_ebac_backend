@@ -6,6 +6,7 @@ package dev.fabiuscaesar.vendasonline.controller;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
+
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
@@ -19,7 +20,7 @@ import dev.fabiuscaesar.vendasonline.service.IProdutoService;
 
 /**
  * @author FabiusCaesar
- * @date 15 de out. de 2025
+ * @date 21 de out. de 2025
  */
 
 @Named
@@ -32,8 +33,11 @@ public class ProdutoController implements Serializable {
     private Produto produto;
     private Collection<Produto> produtos;
 
-    // Propriedade padrão do projeto
+    // controla se estamos editando (true) ou cadastrando (false)
     private boolean update;
+
+    // ===== Barra de busca (código do produto) =====
+    private String codigoBusca;
 
     @PostConstruct
     public void init() {
@@ -47,6 +51,7 @@ public class ProdutoController implements Serializable {
         update = false;
     }
 
+    // ===== CRUD =====
     public void add() {
         try {
             produtoService.cadastrar(produto);
@@ -76,7 +81,7 @@ public class ProdutoController implements Serializable {
 
     public void delete(Produto p) {
         try {
-            produtoService.excluir(p); // contrato do service: excluir(entidade)
+            produtoService.excluir(p);
             produtos.remove(p);
             msgInfo("Produto excluído!");
         } catch (Exception e) {
@@ -88,8 +93,24 @@ public class ProdutoController implements Serializable {
         limparFormulario();
     }
 
-    public String voltarTelaInicial() {
-        return "/index.xhtml?faces-redirect=true";
+    // ===== Busca por código (barra de busca acima do formulário) =====
+    public void buscarPorCodigo() {
+        try {
+            if (codigoBusca == null || codigoBusca.trim().isEmpty()) {
+                msgWarn("Informe o código do produto para buscar.");
+                return;
+            }
+            Produto encontrado = produtoService.buscarPorCodigo(codigoBusca.trim());
+            if (encontrado != null) {
+                this.produto = encontrado;
+                this.update  = true;
+                msgInfo("Produto carregado para edição.");
+            } else {
+                msgWarn("Produto não encontrado.");
+            }
+        } catch (Exception e) {
+            msgErro("Erro na busca: " + causa(e));
+        }
     }
 
     // ===== util =====
@@ -99,12 +120,19 @@ public class ProdutoController implements Serializable {
 
     private void limparFormulario() {
         produto = new Produto();
-        update = false;
+        update  = false;
+        // se quiser também limpar a barra de busca, descomente:
+        // codigoBusca = null;
     }
 
     private void msgInfo(String m) {
         FacesContext.getCurrentInstance()
             .addMessage("growl", new FacesMessage(FacesMessage.SEVERITY_INFO, m, null));
+    }
+
+    private void msgWarn(String m) {
+        FacesContext.getCurrentInstance()
+            .addMessage("growl", new FacesMessage(FacesMessage.SEVERITY_WARN, m, null));
     }
 
     private void msgErro(String m) {
@@ -119,13 +147,14 @@ public class ProdutoController implements Serializable {
     // ===== getters/setters =====
     public Produto getProduto() { return produto; }
     public void setProduto(Produto produto) { this.produto = produto; }
+
     public Collection<Produto> getProdutos() { return produtos; }
 
-    // Propriedade "update" (padrão)
     public boolean isUpdate() { return update; }
     public void setUpdate(boolean update) { this.update = update; }
-
-    // Compatibilidade com EL que use "isUpdate" como nome da propriedade
     public Boolean getIsUpdate() { return update; }
     public void setIsUpdate(Boolean b) { this.update = (b != null && b); }
+
+    public String getCodigoBusca() { return codigoBusca; }
+    public void setCodigoBusca(String codigoBusca) { this.codigoBusca = codigoBusca; }
 }

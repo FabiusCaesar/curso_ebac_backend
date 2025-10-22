@@ -9,69 +9,106 @@
   <h:head>
     <title>Vendas</title>
 
-    <!-- Normalização visual e grid consistente p/ labels + inputs -->
     <h:outputStylesheet>
       :root { --label-w: 180px; }
 
-      .page { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
-      .title { margin: .5rem 0 1rem; text-align: center; }
-      .right { text-align: right; }
-      .total { font-weight: 700; font-size: 1.1rem; }
-      .total .label { margin-right: .25rem; }
+      .page { max-width: 1400px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
 
-      /* Grids consistentes independentes do tema/primeflex */
-      .form-grid {
-        display: grid;
-        grid-template-columns: var(--label-w) 1fr;
-        grid-column-gap: 1rem;
-        grid-row-gap: .75rem;
-        align-items: center; /* alinha label e input verticalmente */
+      /* títulos: mesma fonte do resto (padrão Produto) */
+      .title {
+        margin: .5rem 0 1rem;
+        text-align: center;
+        font-family: inherit !important;
       }
+
+      /* layout 2 colunas: form à esquerda, lista à direita */
+      .two-col {
+        display: grid;
+        grid-template-columns: minmax(500px, 1.3fr) minmax(520px, 1.7fr);
+        gap: 1rem;
+      }
+      @media (max-width: 1100px) { .two-col { grid-template-columns: 1fr; } }
+
+      /* grids p/ labels + inputs */
+      .form-grid,
       .form-grid-2 {
         display: grid;
-        grid-template-columns: var(--label-w) 1fr var(--label-w) 1fr;
+        grid-template-columns: var(--label-w) 1fr;
         grid-column-gap: 1rem;
         grid-row-gap: .75rem;
         align-items: center;
       }
       @media (max-width: 800px) {
-        .form-grid,
-        .form-grid-2 { grid-template-columns: 1fr; }
+        .form-grid, .form-grid-2 { grid-template-columns: 1fr; }
       }
 
-      /* Labels */
-      .form-grid .ui-outputlabel,
-      .form-grid-2 .ui-outputlabel { align-self: center; }
+      /* ações dos itens no form */
+      .actions {
+        display: grid;
+        grid-template-columns: var(--label-w) 1fr 1fr;
+        grid-column-gap: 1rem;
+        margin-top: .75rem;
+        margin-bottom: .75rem;
+        align-items: stretch;
+      }
+      .actions .spacer { display: block; }
+      .actions .ui-button { width: 100%; }
 
-      /* Inputs PrimeFaces ocupam 100% e alinham com labels */
-      .form-grid .ui-inputfield,
-      .form-grid-2 .ui-inputfield,
-      .form-grid .ui-inputtext,
-      .form-grid-2 .ui-inputtext { width: 100%; box-sizing: border-box; }
+      /* botões finais do formulário */
+      .submit-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: .75rem;
+        flex-wrap: wrap;
+        margin-top: .5rem;
+      }
 
-      /* AutoComplete */
-      .form-grid .ui-autocomplete,
-      .form-grid-2 .ui-autocomplete { width: 100%; }
-      .form-grid .ui-autocomplete-input,
-      .form-grid-2 .ui-autocomplete-input { width: 100%; box-sizing: border-box; }
+      /* ===== PADRÃO DE TABELA (igual Produto) ===== */
+      /* bloco da tabela centralizado e com largura limitada */
+      .centered-table {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: block;
+      }
+      /* quebras de linha para evitar barra horizontal */
+      .wrap { white-space: normal !important; word-break: break-word; overflow-wrap: anywhere; }
 
-      /* InputNumber */
-      .form-grid .ui-inputnumber input,
-      .form-grid-2 .ui-inputnumber input { width: 100%; box-sizing: border-box; }
+      /* ações por linha centralizadas (como Produto) */
+      .table-actions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        flex-wrap: wrap;
+      }
+      .table-actions .p-button.p-button-rounded{
+        width: 2.25rem;
+        height: 2.25rem;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-      /* DatePicker / Calendar */
-      .form-grid .ui-datepicker input,
-      .form-grid-2 .ui-datepicker input,
-      .form-grid .ui-calendar input,
-      .form-grid-2 .ui-calendar input { width: 100%; box-sizing: border-box; }
+      /* barra de busca (mesmo padrão de Produto) */
+      .searchbar {
+        max-width: 900px;
+        margin: 0 auto 1rem;
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .searchbar .p-inputtext { width: 220px; }
 
-      /* SelectOneMenu / Dropdown (se usar em algum ponto) */
-      .form-grid .ui-selectonemenu,
-      .form-grid-2 .ui-selectonemenu { width: 100%; box-sizing: border-box; }
+      /* total da venda */
+      .total { font-weight: 700; font-size: 1.1rem; text-align: right; }
+      .total .label { margin-right: .25rem; }
 
-      /* Botões da linha de ações dos itens */
-      .actions { text-align: right; }
-      .mt-sm { margin-top: .75rem; }
+      /* inputs menores */
+      #formVenda .ui-inputnumber.w-xs { width: 150px; max-width: 100%; display: inline-block; }
+      #formVenda .ui-inputnumber.w-xs input { width: 100%; }
     </h:outputStylesheet>
   </h:head>
 
@@ -84,17 +121,17 @@
     <div class="page">
       <p:growl id="growl" showDetail="true" life="3000" />
 
-      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-        <!-- COLUNA ESQUERDA: FORM NOVA/EDIÇÃO DE VENDA -->
+      <div class="two-col">
+        <!-- ===== COLUNA ESQUERDA: FORM NOVA/EDIÇÃO DE VENDA ===== -->
         <div>
-          <h2 class="title">#{vendaController.isUpdate ? 'Atualizar Venda' : 'Nova Venda'}</h2>
+          <h:panelGroup layout="block" styleClass="ui-widget">
+            <h2 class="title">#{vendaController.isUpdate ? 'Atualizar Venda' : 'Nova Venda'}</h2>
+          </h:panelGroup>
 
           <h:form id="formVenda">
             <!-- DADOS DA VENDA -->
             <p:panel header="Dados da Venda" toggleable="true" collapsed="false" toggleSpeed="150">
-              <!-- usamos nossa grid em vez do layout do panelGrid -->
               <div class="form-grid">
-                <!-- Cliente -->
                 <p:outputLabel for="cliente" value="Cliente" />
                 <p:autoComplete id="cliente"
                                 value="#{vendaController.venda.cliente}"
@@ -104,9 +141,9 @@
                                 converter="clienteConverter"
                                 placeholder="Busque por nome ou CPF" />
 
-                <!-- Data da Venda -->
                 <p:outputLabel for="data" value="Data da venda" />
-                <p:datePicker id="data" value="#{vendaController.dataVenda}" showIcon="true" />
+                <p:datePicker id="data" value="#{vendaController.dataVenda}" showIcon="true"
+                              style="width: 200px;" />
               </div>
             </p:panel>
 
@@ -115,7 +152,6 @@
             <!-- ITENS DA VENDA -->
             <p:panel header="Itens da Venda" toggleable="true" collapsed="false" toggleSpeed="150">
               <div class="form-grid-2">
-                <!-- Produto -->
                 <p:outputLabel for="produto" value="Produto" />
                 <p:autoComplete id="produto"
                                 value="#{vendaController.produtoSelecionado}"
@@ -126,13 +162,13 @@
                                 converter="produtoConverter"
                                 placeholder="Busque por nome, código, modelo ou descrição" />
 
-                <!-- Quantidade -->
                 <p:outputLabel for="qtd" value="Quantidade" />
                 <p:inputNumber id="qtd" value="#{vendaController.quantidadeProduto}"
-                               minValue="1" decimalPlaces="0" />
+                               minValue="1" decimalPlaces="0" styleClass="w-xs" />
               </div>
 
-              <div class="actions mt-sm">
+              <div class="actions">
+                <span class="spacer" aria-hidden="true"></span>
                 <p:commandButton value="Adicionar"
                                  action="#{vendaController.adicionarProduto}"
                                  update=":formVenda:tabelaItens :formVenda:total :growl"
@@ -144,35 +180,56 @@
                                  styleClass="ui-button-secondary" />
               </div>
 
-              <!-- Tabela de Itens -->
-              <p:dataTable id="tabelaItens" value="#{vendaController.venda.produtos}" var="pq"
-                           emptyMessage="Nenhum item adicionado"
-                           responsiveLayout="scroll">
-                <p:column headerText="Código" styleClass="right">
+              <!-- ===== Tabela de itens (centralizada e sem overflow) ===== -->
+              <p:dataTable id="tabelaItens"
+                           value="#{vendaController.venda.produtos}" var="pq"
+                           responsiveLayout="scroll"
+                           emptyMessage="Nenhum item adicionado."
+                           style="max-width:1000px; margin:0 auto; display:block"
+                           tableStyle="table-layout:fixed;">
+
+                <!-- % pensadas para caber sem rolagem -->
+                <p:column headerText="Código"
+                          headerStyle="text-align:center"
+                          style="width:14%; text-align:center">
                   <h:outputText value="#{pq.produto.codigo}" />
                 </p:column>
-                <p:column headerText="Produto">
+
+                <p:column headerText="Produto"
+                          headerStyle="text-align:center"
+                          style="width:30%; text-align:center"
+                          styleClass="wrap">
                   <h:outputText value="#{pq.produto.nome}" />
                 </p:column>
-                <p:column headerText="Quantidade" styleClass="right">
+
+                <p:column headerText="Quant."
+                          headerStyle="text-align:center"
+                          style="width:10%; text-align:center">
                   <h:outputText value="#{pq.quantidade}" />
                 </p:column>
-                <p:column headerText="Valor do Item" styleClass="right">
+
+                <p:column headerText="Valor"
+                          headerStyle="text-align:center"
+                          style="width:26%; text-align:center">
                   <h:outputText value="#{pq.valorTotal}">
                     <f:convertNumber type="currency" currencySymbol="R$ " />
                   </h:outputText>
                 </p:column>
-                <p:column headerText="Ações" styleClass="right">
-                  <p:commandButton value="Remover linha"
-                                   action="#{vendaController.removerProduto(pq)}"
-                                   update=":formVenda:tabelaItens :formVenda:total :growl"
-                                   icon="pi pi-trash"
-                                   styleClass="ui-button-danger" />
+
+                <p:column headerText="Ações"
+                          headerStyle="text-align:center"
+                          style="width:20%; text-align:center">
+                  <div class="table-actions">
+                    <p:commandButton value="Remover"
+                                     action="#{vendaController.removerProduto(pq)}"
+                                     update=":formVenda:tabelaItens :formVenda:total :growl"
+                                     icon="pi pi-trash"
+                                     styleClass="ui-button-danger" />
+                  </div>
                 </p:column>
               </p:dataTable>
 
-              <!-- Total -->
-              <h:panelGroup id="total" styleClass="right total" layout="block" style="margin-top:.75rem;">
+              <h:panelGroup id="total" styleClass="total" layout="block" style="margin-top:.75rem;">
                 <span class="label">Total:</span>
                 <h:outputText value="#{vendaController.venda.valorTotal}">
                   <f:convertNumber type="currency" currencySymbol="R$ " />
@@ -181,7 +238,9 @@
             </p:panel>
 
             <p:spacer height="10" />
-            <div class="right">
+
+            <!-- botões finais -->
+            <div class="submit-actions">
               <p:commandButton value="#{vendaController.isUpdate ? 'Salvar alterações' : 'Cadastrar venda'}"
                                action="#{vendaController.salvar}"
                                update=":formVenda :formVenda:tabelaItens :formVenda:total :growl :formTabelaVendas:tabelaVendas"
@@ -191,52 +250,99 @@
                                update=":formVenda :formVenda:tabelaItens :formVenda:total :growl"
                                icon="pi pi-times" styleClass="ui-button-secondary" />
             </div>
-
           </h:form>
         </div>
 
-        <!-- COLUNA DIREITA: LISTA DE VENDAS -->
+        <!-- ===== COLUNA DIREITA: LISTA DE VENDAS ===== -->
         <div>
-          <h2 class="title">Vendas cadastradas</h2>
+          <h:panelGroup layout="block" styleClass="ui-widget">
+            <h2 class="title">Vendas Cadastradas</h2>
+          </h:panelGroup>
+
+          <!-- BUSCA POR CÓDIGO -->
+          <h:form id="buscaVenda">
+            <div class="searchbar">
+              <p:inputText id="codigoBusca" value="#{vendaController.codigoBusca}"
+                           placeholder="Código da venda" />
+              <p:commandButton value="Buscar" icon="pi pi-search"
+                               actionListener="#{vendaController.buscarPorCodigo}"
+                               process="@this codigoBusca"
+                               update=":formVenda :formVenda:tabelaItens :formVenda:total :growl :formTabelaVendas:tabelaVendas" />
+            </div>
+          </h:form>
+
           <h:form id="formTabelaVendas">
-            <p:dataTable id="tabelaVendas" value="#{vendaController.vendas}" var="vend"
-                         paginator="true" rows="8" emptyMessage="Nenhuma venda cadastrada"
-                         responsiveLayout="scroll">
-              <p:column headerText="Código" styleClass="right">
+            <!-- ===== Tabela principal (centralizada e sem overflow) ===== -->
+            <p:dataTable id="tabelaVendas"
+                         value="#{vendaController.vendas}" var="vend"
+                         paginator="true" rows="8"
+                         responsiveLayout="scroll"
+                         emptyMessage="Nenhuma venda cadastrada."
+                         style="max-width:1000px; margin:0 auto; display:block"
+                         tableStyle="table-layout:fixed;">
+
+              <!-- % pensadas para caber na coluna da direita -->
+              <p:column headerText="Código"
+                        headerStyle="text-align:center"
+                        style="width:12%; text-align:center">
                 <h:outputText value="#{vend.codigo}" />
               </p:column>
-              <p:column headerText="Cliente">
+
+              <p:column headerText="Cliente"
+                        headerStyle="text-align:center"
+                        style="width:20%; text-align:center"
+                        styleClass="wrap">
                 <h:outputText value="#{vend.cliente.nome}" />
               </p:column>
-              <p:column headerText="Data" styleClass="right">
+
+              <p:column headerText="Data"
+                        headerStyle="text-align:center"
+                        style="width:12%; text-align:center">
                 <h:outputText value="#{vendaController.toDate(vend.dataVenda)}">
                   <f:convertDateTime pattern="dd/MM/yyyy" timeZone="America/Campo_Grande"/>
                 </h:outputText>
               </p:column>
-              <p:column headerText="Status">
+
+              <p:column headerText="Status"
+                        headerStyle="text-align:center"
+                        style="width:14%; text-align:center">
                 <h:outputText value="#{vend.status}" />
               </p:column>
-              <p:column headerText="Total" styleClass="right">
+
+              <p:column headerText="Total"
+                        headerStyle="text-align:center"
+                        style="width:18%; text-align:center">
                 <h:outputText value="#{vend.valorTotal}">
                   <f:convertNumber type="currency" currencySymbol="R$ " />
                 </h:outputText>
               </p:column>
-              <p:column headerText="Ações" styleClass="right">
-                <p:commandButton value="Editar"
-                                 action="#{vendaController.edit(vend)}"
-                                 update=":formVenda :formVenda:tabelaItens :formVenda:total :growl"
-                                 icon="pi pi-pencil" />
-                <p:commandButton value="Finalizar"
-                                 action="#{vendaController.finalizar(vend)}"
-                                 update=":formTabelaVendas :growl"
-                                 icon="pi pi-check"
-                                 styleClass="ui-button-success" />
-                <p:commandButton value="Cancelar"
-                                 action="#{vendaController.delete(vend)}"
-                                 update=":formTabelaVendas :growl"
-                                 icon="pi pi-times"
-                                 styleClass="ui-button-danger" />
+
+              <p:column headerText="Ações"
+                        headerStyle="text-align:center"
+                        style="width:24%; text-align:center">
+                <div class="table-actions">
+                  <p:commandButton id="btnEditar"
+                                   icon="pi pi-pencil" title="Editar"
+                                   action="#{vendaController.edit(vend)}"
+                                   update=":formVenda :formVenda:tabelaItens :formVenda:total :growl"
+                                   styleClass="p-button-rounded p-button-info ui-button-info"/>
+                  <p:commandButton id="btnFinalizar"
+                                   icon="pi pi-check" title="Finalizar"
+                                   action="#{vendaController.finalizar(vend)}"
+                                   update=":formTabelaVendas :growl"
+                                   styleClass="p-button-rounded p-button-success ui-button-success"/>
+                  <p:commandButton id="btnCancelar"
+                                   icon="pi pi-times" title="Cancelar venda"
+                                   action="#{vendaController.delete(vend)}"
+                                   update=":formTabelaVendas :growl"
+                                   styleClass="p-button-rounded p-button-danger ui-button-danger"/>
+                </div>
+
+                <p:tooltip for="btnEditar" value="Editar" />
+                <p:tooltip for="btnFinalizar" value="Finalizar" />
+                <p:tooltip for="btnCancelar" value="Cancelar venda" />
               </p:column>
+
             </p:dataTable>
           </h:form>
         </div>

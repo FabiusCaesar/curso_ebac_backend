@@ -37,6 +37,9 @@ public class ClienteController implements Serializable {
     private String cpfMask;
     private String telMask;
 
+    // barra de busca (CPF com máscara)
+    private String cpfBuscaMask;
+
     @PostConstruct
     public void init() {
         cliente = new Cliente();
@@ -49,6 +52,7 @@ public class ClienteController implements Serializable {
         update = false;
     }
 
+    // ===== CRUD =====
     public void add() {
         try {
             cliente.setCpf(toLongOrNull(cpfMask));
@@ -69,8 +73,8 @@ public class ClienteController implements Serializable {
 
     public void edit(Cliente c) {
         this.cliente = c;
-        this.cpfMask = (c.getCpf() == null) ? null : c.getCpf().toString();
-        this.telMask = (c.getTel() == null) ? null : c.getTel().toString();
+        this.cpfMask = (c.getCpf() == null) ? null : formatCpf(c.getCpf());
+        this.telMask = (c.getTel() == null) ? null : formatTel(c.getTel());
         this.update = true;
     }
 
@@ -100,7 +104,29 @@ public class ClienteController implements Serializable {
 
     public void cancel() { limparFormulario(); }
 
-    public String voltarTelaInicial() { return "/index.xhtml?faces-redirect=true"; }
+    // ===== Busca por CPF =====
+    public void buscarPorCPF() {
+        try {
+            Long cpf = toLongOrNull(cpfBuscaMask);
+            if (cpf == null) {
+                facesWarn("Informe um CPF válido para buscar.");
+                return;
+            }
+            Cliente encontrado = clienteService.buscarPorCPF(cpf);
+            if (encontrado != null) {
+                this.cliente = encontrado;
+                this.update  = true;
+                // popular máscaras com os dados do encontrado
+                this.cpfMask = formatCpf(encontrado.getCpf());
+                this.telMask = formatTel(encontrado.getTel());
+                facesInfo("Cliente carregado para edição.");
+            } else {
+                facesWarn("Cliente não encontrado.");
+            }
+        } catch (Exception e) {
+            facesErro("Erro na busca: " + msgCausa(e));
+        }
+    }
 
     // ===== util =====
     private void recarregarLista() throws DAOException {
@@ -108,10 +134,12 @@ public class ClienteController implements Serializable {
     }
 
     private void limparFormulario() {
-        cliente = new Cliente();
-        cpfMask = null;
-        telMask = null;
-        update = false;
+        cliente  = new Cliente();
+        cpfMask  = null;
+        telMask  = null;
+        update   = false;
+        // se preferir, limpe também a busca:
+        // cpfBuscaMask = null;
     }
 
     private String onlyDigits(String s) { return (s == null) ? null : s.replaceAll("\\D+", ""); }
@@ -120,9 +148,30 @@ public class ClienteController implements Serializable {
         return (digits == null || digits.isBlank()) ? null : Long.valueOf(digits);
     }
 
+    // Formatação amigável para exibição em tabela
+    public String formatCpf(Long cpf) {
+        if (cpf == null) return "";
+        String s = String.format("%011d", cpf);
+        return s.replaceFirst("(\\d{3})(\\d{3})(\\d{3})(\\d{2})", "$1.$2.$3-$4");
+    }
+    public String formatTel(Long tel) {
+        if (tel == null) return "";
+        String s = tel.toString();
+        // tenta DDD+9; ajuste simples
+        if (s.length() == 11)
+            return s.replaceFirst("(\\d{2})(\\d{5})(\\d{4})", "($1) $2-$3");
+        if (s.length() == 10)
+            return s.replaceFirst("(\\d{2})(\\d{4})(\\d{4})", "($1) $2-$3");
+        return s; // fallback
+    }
+
     private void facesInfo(String m) {
         javax.faces.context.FacesContext.getCurrentInstance()
             .addMessage("growl", new FacesMessage(FacesMessage.SEVERITY_INFO, m, null));
+    }
+    private void facesWarn(String m) {
+        javax.faces.context.FacesContext.getCurrentInstance()
+            .addMessage("growl", new FacesMessage(FacesMessage.SEVERITY_WARN, m, null));
     }
     private void facesErro(String m) {
         javax.faces.context.FacesContext.getCurrentInstance()
@@ -135,7 +184,6 @@ public class ClienteController implements Serializable {
     public void setCliente(Cliente c) { this.cliente = c; }
     public List<Cliente> getClientes() { return clientes; }
 
-    // padrão + compat
     public boolean isUpdate() { return update; }
     public void setUpdate(boolean update) { this.update = update; }
     public Boolean getIsUpdate() { return update; }
@@ -145,4 +193,7 @@ public class ClienteController implements Serializable {
     public void setCpfMask(String cpfMask) { this.cpfMask = cpfMask; }
     public String getTelMask() { return telMask; }
     public void setTelMask(String telMask) { this.telMask = telMask; }
+
+    public String getCpfBuscaMask() { return cpfBuscaMask; }
+    public void setCpfBuscaMask(String cpfBuscaMask) { this.cpfBuscaMask = cpfBuscaMask; }
 }
