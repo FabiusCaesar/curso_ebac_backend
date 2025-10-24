@@ -1,2 +1,36 @@
 /mod14/CadastroClienteSwing/nbproject/private/
 /mod14/CadastroClienteSwing/build/
+
+# ============== Build output (Maven/Gradle/IDEs) ==============
+**/target/
+**/build/
+**/out/
+**/dist/
+**/nbbuild/
+**/nbdist/
+
+# ============== IDEs ==============
+# IntelliJ IDEA
+**/.idea/
+**/*.iml
+
+# Eclipse / STS
+**/.project
+**/.classpath
+**/.settings/
+**/.factorypath
+
+# VS Code
+**/.vscode/
+
+# NetBeans (guarde só o que você realmente precisa)
+**/nbproject/private/
+**/nbproject/cache/
+
+# ============== Logs e temporários ==============
+**/*.log
+*.log
+
+# SO
+.DS_Store
+Thumbs.db
