@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<f:view>
+  <h:head>
+    <title>Estoque</title>
+
+    <h:outputStylesheet>
+      .page { max-width: 1000px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+      .title { margin: 1rem 0 1rem; text-align: center; font-family: inherit !important; }
+
+      /* ===== busca ===== */
+      .searchbar {
+        max-width: 900px; margin: 0 auto 1rem;
+        display: flex; gap: .5rem; align-items: center; justify-content: center; flex-wrap: wrap;
+      }
+      .searchbar .p-inputtext { width: 220px; }
+
+      /* ===== tabela ===== */
+      .centered-table { max-width: 1000px; margin: 0 auto; display: block; }
+      .wrap { white-space: normal !important; word-break: break-word; overflow-wrap: anywhere; }
+
+      .table-actions{
+        display: flex; justify-content: center; align-items: center; gap: .5rem; flex-wrap: wrap;
+      }
+      .table-actions .p-button.p-button-rounded{
+        width: 2.25rem; height: 2.25rem; padding: 0;
+        display: inline-flex; align-items: center; justify-content: center;
+      }
+      .qty-highlight { font-weight: 700; }
+
+      /* ===== modal ===== */
+      .dialog-body {
+        display: grid; grid-template-columns: 130px 1fr;
+        gap: .75rem 1rem; align-items: center; min-width: 0;
+      }
+      @media (max-width: 520px) { .dialog-body { grid-template-columns: 1fr; } }
+      .dialog-actions { display: flex; justify-content: flex-end; gap: .5rem; margin-top: .75rem; flex-wrap: wrap; }
+
+      .w-xs { width: 140px; max-width: 100%; }
+      .ui-inputnumber.w-xs input { width: 100%; }
+
+      .ui-dialog .ui-dialog-content { overflow-x: hidden; }
+      .hint { font-size: .85rem; opacity: .8; }
+      .pending { font-size: .85rem; color: #888; }
+    </h:outputStylesheet>
+  </h:head>
+
+  <h:body>
+    <!-- Menubar -->
+    <h:form id="menuForm">
+      <ui:include src="/WEB-INF/fragments/menubar.xhtml" />
+    </h:form>
+
+    <div class="page">
+      <p:growl id="growl" showDetail="true" life="3000" />
+
+      <h:panelGroup layout="block" styleClass="ui-widget">
+        <h2 class="title">Gerenciar Estoque</h2>
+      </h:panelGroup>
+
+      <!-- busca por código -->
+      <h:form id="buscaEstoque">
+        <div class="searchbar">
+          <p:inputText id="codigoBusca" value="#{estoqueController.codigoBusca}" placeholder="Código do produto" />
+          <p:commandButton value="Buscar" icon="pi pi-search"
+                           actionListener="#{estoqueController.buscarPorCodigo}"
+                           process="@this codigoBusca"
+                           update=":formTabela:tabela :growl :formTabela:dlgEstoque :formTabela:dlgContent" />
+        </div>
+      </h:form>
+
+      <!-- tabela -->
+      <h:form id="formTabela">
+        <p:dataTable id="tabela"
+                     value="#{estoqueController.produtos}" var="p"
+                     paginator="true" rows="10"
+                     responsiveLayout="scroll"
+                     emptyMessage="Nenhum produto encontrado."
+                     style="max-width:1000px; margin:0 auto; display:block"
+                     tableStyle="table-layout:fixed;">
+
+          <!-- larguras somando ~100% -->
+          <p:column headerText="Código" headerStyle="text-align:center" style="width:18%; text-align:center">
+            <h:outputText value="#{p.codigo}" />
+          </p:column>
+
+          <p:column headerText="Modelo" headerStyle="text-align:center" style="width:18%; text-align:center" styleClass="wrap">
+            <h:outputText value="#{p.modelo}" />
+          </p:column>
+
+          <p:column headerText="Produto" headerStyle="text-align:center" style="width:29%; text-align:center" styleClass="wrap">
+            <h:outputText value="#{p.nome}" />
+          </p:column>
+
+          <p:column headerText="Quantidade" headerStyle="text-align:center" style="width:15%; text-align:center">
+            <h:outputText value="#{estoqueController.quantidadeDo(p.id)}" styleClass="qty-highlight" />
+          </p:column>
+
+          <p:column headerText="Ações" headerStyle="text-align:center" style="width:20%; text-align:center">
+            <div class="table-actions">
+              <p:commandButton id="btnEditarQtd"
+                               icon="pi pi-pencil" title="Editar estoque"
+                               action="#{estoqueController.abrirModal(p)}"
+                               update=":formTabela:dlgEstoque :formTabela:dlgContent :growl"
+                               styleClass="p-button-rounded p-button-info ui-button-info" />
+            </div>
+            <p:tooltip for="btnEditarQtd" value="Editar estoque" />
+          </p:column>
+        </p:dataTable>
+
+        <!-- modal -->
+        <p:dialog id="dlgEstoque"
+                  widgetVar="dlgEstoque"
+                  header="Editar estoque"
+                  modal="true" closable="false" resizable="false" draggable="false"
+                  showEffect="fade" hideEffect="fade" responsive="true"
+                  style="max-width: 520px;">
+
+          <h:panelGroup id="dlgContent" layout="block" styleClass="dialog-body">
+            <p:outputLabel value="Produto" />
+            <h:outputText value="#{estoqueController.produtoSelecionado != null ? estoqueController.produtoSelecionado.nome : ''}" />
+
+            <p:outputLabel value="Código" />
+            <h:outputText value="#{estoqueController.produtoSelecionado != null ? estoqueController.produtoSelecionado.codigo : ''}" />
+
+            <p:outputLabel value="Modelo" />
+            <h:outputText value="#{estoqueController.produtoSelecionado != null ? estoqueController.produtoSelecionado.modelo : ''}" />
+
+            <p:outputLabel value="Qtd. inicial" />
+            <h:outputText value="#{estoqueController.quantidadeInicial}" />
+
+            <p:outputLabel value="Qtd. atual" />
+            <h:outputText value="#{estoqueController.quantidadeAtual}" styleClass="qty-highlight" />
+
+            <p:outputLabel for="ajuste" value="Ajuste (+/−)" />
+            <div>
+              <p:inputNumber id="ajuste"
+                             value="#{estoqueController.ajusteQuantidade}"
+                             decimalPlaces="0" minValue="-999999" maxValue="999999"
+                             styleClass="w-xs" />
+              <div class="hint">Para somar, digite apenas o número (sem “+”). Para subtrair, use “-”.</div>
+              <h:panelGroup rendered="#{estoqueController.quantidadeAtual ne estoqueController.quantidadeInicial}">
+                <div class="pending">* Alterações ainda não salvas</div>
+              </h:panelGroup>
+            </div>
+          </h:panelGroup>
+
+          <div class="dialog-actions">
+            <p:commandButton value="Aplicar" icon="pi pi-plus"
+                             action="#{estoqueController.aplicarAjuste}"
+                             process="@this :formTabela:ajuste"
+                             update=":formTabela:dlgContent :growl" />
+
+            <p:commandButton value="Salvar e Fechar" icon="pi pi-check"
+                             action="#{estoqueController.salvarEFechar}"
+                             update=":formTabela:tabela :growl" />
+
+            <p:commandButton value="Cancelar" icon="pi pi-times"
+                             action="#{estoqueController.cancelarModal}"
+                             styleClass="ui-button-secondary" />
+          </div>
+        </p:dialog>
+      </h:form>
+    </div>
+  </h:body>
+</f:view>
+</html>

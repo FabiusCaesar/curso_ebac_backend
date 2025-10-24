@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="dev.fabiuscaesar.vendasonline.AllTests" time="12.696" tests="40" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="dev.fabiuscaesar.vendasonline.AllTests" time="16.845" tests="40" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11\bin"/>
-    <property name="sun.java.command" value="C:\Users\Fabio\AppData\Local\Temp\surefire18125655685342851106\surefirebooter-20251022190431172_3.jar C:\Users\Fabio\AppData\Local\Temp\surefire18125655685342851106 2025-10-22T19-04-30_444-jvmRun1 surefire-20251022190431172_1tmp surefire_0-20251022190431172_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Fabio\AppData\Local\Temp\surefire6874986085541130407\surefirebooter-20251023165318581_3.jar C:\Users\Fabio\AppData\Local\Temp\surefire6874986085541130407 2025-10-23T16-53-17_582-jvmRun1 surefire-20251023165318581_1tmp surefire_0-20251023165318581_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Fabio\Desktop\Full Stack Java\back-end\tarefas-repository\mod38\VendasOnline\target\test-classes;C:\Users\Fabio\Desktop\Full Stack Java\back-end\tarefas-repository\mod38\VendasOnline\target\classes;C:\Users\Fabio\.m2\repository\javax\javaee-web-api\8.0.1\javaee-web-api-8.0.1.jar;C:\Users\Fabio\.m2\repository\org\primefaces\primefaces\11.0.0\primefaces-11.0.0.jar;C:\Users\Fabio\.m2\repository\org\postgresql\postgresql\42.3.2\postgresql-42.3.2.jar;C:\Users\Fabio\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\Fabio\.m2\repository\org\hibernate\hibernate-core\5.3.20.Final\hibernate-core-5.3.20.Final.jar;C:\Users\Fabio\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\Fabio\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Fabio\.m2\repository\org\javassist\javassist\3.23.2-GA\javassist-3.23.2-GA.jar;C:\Users\Fabio\.m2\repository\net\bytebuddy\byte-buddy\1.9.11\byte-buddy-1.9.11.jar;C:\Users\Fabio\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Fabio\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\Fabio\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\Fabio\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\Fabio\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Fabio\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\Fabio\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.4.Final\hibernate-commons-annotations-5.0.4.Final.jar;C:\Users\Fabio\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Fabio\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\Fabio\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\Fabio\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\Fabio\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\Fabio\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\Fabio\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\Fabio\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Fabio\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Fabio\AppData\Local\Temp\surefire18125655685342851106\surefirebooter-20251022190431172_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Fabio\AppData\Local\Temp\surefire6874986085541130407\surefirebooter-20251023165318581_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.27+8-LTS-232"/>
@@ -62,7 +62,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="salvarCliente" classname="dev.fabiuscaesar.vendasonline.dao.ClienteDAOTest" time="0.721">
+  <testcase name="salvarCliente" classname="dev.fabiuscaesar.vendasonline.dao.ClienteDAOTest" time="0.985">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -375,59 +375,59 @@ Hibernate:
     from
         tb_cliente cliente0_
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:33 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[out 23, 2025 4:53:22 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:33 PM org.hibernate.Version logVersion
+out 23, 2025 4:53:22 PM org.hibernate.Version logVersion
 INFO: HHH000412: Hibernate Core {5.3.20.Final}
-out 22, 2025 7:04:33 PM org.hibernate.cfg.Environment <clinit>
+out 23, 2025 4:53:22 PM org.hibernate.cfg.Environment <clinit>
 INFO: HHH000206: hibernate.properties not found
-out 22, 2025 7:04:34 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+out 23, 2025 4:53:23 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
 INFO: HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-out 22, 2025 7:04:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:24 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:24 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:24 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:24 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:24 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:36 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:25 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:36 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:26 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:38 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:29 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@75023c53] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:38 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:29 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@991cbde] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:38 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:29 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:38 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:29 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-out 22, 2025 7:04:38 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+out 23, 2025 4:53:29 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:38 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:38 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:38 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:38 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:38 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:38 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:30 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:38 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:30 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:38 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:30 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@198536f6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:38 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:30 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     drop table tb_cliente if exists" via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
@@ -504,7 +504,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "tb_cliente" bec
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:38 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:30 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     drop table tb_produto if exists" via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
@@ -581,9 +581,9 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "tb_produto" bec
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:38 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:30 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1ac6dd3d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:38 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:30 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     create table tb_cliente (
        id bigint not null,
@@ -692,7 +692,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "tb_cliente" already e
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:38 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:30 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     create table tb_produto (
        id bigint not null,
@@ -792,7 +792,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "tb_produto" already e
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:38 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:30 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table tb_cliente 
        add constraint uk_cliente_cpf unique (cpf)" via JDBC Statement
@@ -874,7 +874,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "uk_cliente_cpf" 
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:38 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:30 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table tb_produto 
        add constraint uk_produto_codigo unique (codigo)" via JDBC Statement
@@ -956,15 +956,15 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "uk_produto_codig
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:39 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:30 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:39 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:30 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-out 22, 2025 7:04:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+out 23, 2025 4:53:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
 ]]></system-err>
   </testcase>
-  <testcase name="excluirCliente" classname="dev.fabiuscaesar.vendasonline.dao.ClienteDAOTest" time="0.47">
+  <testcase name="excluirCliente" classname="dev.fabiuscaesar.vendasonline.dao.ClienteDAOTest" time="0.683">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -1158,27 +1158,27 @@ Hibernate:
     from
         tb_cliente cliente0_
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:39 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[out 23, 2025 4:53:30 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:39 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:30 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:39 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:30 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:39 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:31 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@634f58d2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:39 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:31 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     drop table tb_cliente if exists" via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
@@ -1255,7 +1255,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "tb_cliente" bec
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:39 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:31 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     drop table tb_produto if exists" via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
@@ -1332,9 +1332,9 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "tb_produto" bec
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:39 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:31 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1cd2143b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:39 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:31 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     create table tb_cliente (
        id bigint not null,
@@ -1443,7 +1443,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "tb_cliente" already e
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:39 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:31 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     create table tb_produto (
        id bigint not null,
@@ -1543,7 +1543,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "tb_produto" already e
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:39 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:31 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table tb_cliente 
        add constraint uk_cliente_cpf unique (cpf)" via JDBC Statement
@@ -1625,7 +1625,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "uk_cliente_cpf" 
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:39 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:31 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table tb_produto 
        add constraint uk_produto_codigo unique (codigo)" via JDBC Statement
@@ -1707,15 +1707,15 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "uk_produto_codig
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:39 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:31 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:39 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:31 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-out 22, 2025 7:04:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+out 23, 2025 4:53:31 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
 ]]></system-err>
   </testcase>
-  <testcase name="pesquisarCliente" classname="dev.fabiuscaesar.vendasonline.dao.ClienteDAOTest" time="0.394">
+  <testcase name="pesquisarCliente" classname="dev.fabiuscaesar.vendasonline.dao.ClienteDAOTest" time="1.002">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -1894,27 +1894,27 @@ Hibernate:
     from
         tb_cliente cliente0_
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:39 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[out 23, 2025 4:53:31 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:31 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:31 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:31 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:31 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:31 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:39 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:31 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:39 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:31 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:40 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:31 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@621f23ac] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:40 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     drop table tb_cliente if exists" via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
@@ -1991,7 +1991,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "tb_cliente" bec
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:40 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     drop table tb_produto if exists" via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
@@ -2068,9 +2068,9 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "tb_produto" bec
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:40 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:32 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2f4d32bf] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:40 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     create table tb_cliente (
        id bigint not null,
@@ -2179,7 +2179,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "tb_cliente" already e
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:40 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     create table tb_produto (
        id bigint not null,
@@ -2279,7 +2279,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "tb_produto" already e
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:40 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table tb_cliente 
        add constraint uk_cliente_cpf unique (cpf)" via JDBC Statement
@@ -2361,7 +2361,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "uk_cliente_cpf" 
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:40 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table tb_produto 
        add constraint uk_produto_codigo unique (codigo)" via JDBC Statement
@@ -2443,15 +2443,15 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "uk_produto_codig
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:40 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:40 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:32 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-out 22, 2025 7:04:40 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+out 23, 2025 4:53:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
 ]]></system-err>
   </testcase>
-  <testcase name="alterarCliente" classname="dev.fabiuscaesar.vendasonline.dao.ClienteDAOTest" time="0.739">
+  <testcase name="alterarCliente" classname="dev.fabiuscaesar.vendasonline.dao.ClienteDAOTest" time="0.371">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -2674,27 +2674,27 @@ Hibernate:
     from
         tb_cliente cliente0_
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:40 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[out 23, 2025 4:53:32 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:40 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:40 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:40 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:40 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:40 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:40 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:32 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:40 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:32 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:40 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:32 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@47a3d56a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:40 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     drop table tb_cliente if exists" via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
@@ -2771,7 +2771,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "tb_cliente" bec
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:40 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     drop table tb_produto if exists" via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
@@ -2848,9 +2848,9 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "tb_produto" bec
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:40 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:32 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@660b1a9d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:40 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     create table tb_cliente (
        id bigint not null,
@@ -2959,7 +2959,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "tb_cliente" already e
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:40 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     create table tb_produto (
        id bigint not null,
@@ -3059,7 +3059,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "tb_produto" already e
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:40 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table tb_cliente 
        add constraint uk_cliente_cpf unique (cpf)" via JDBC Statement
@@ -3141,7 +3141,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "uk_cliente_cpf" 
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:40 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table tb_produto 
        add constraint uk_produto_codigo unique (codigo)" via JDBC Statement
@@ -3223,15 +3223,15 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "uk_produto_codig
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:40 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:40 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:32 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-out 22, 2025 7:04:40 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+out 23, 2025 4:53:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
 ]]></system-err>
   </testcase>
-  <testcase name="buscarTodos" classname="dev.fabiuscaesar.vendasonline.dao.ClienteDAOTest" time="0.404">
+  <testcase name="buscarTodos" classname="dev.fabiuscaesar.vendasonline.dao.ClienteDAOTest" time="0.291">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -3436,27 +3436,27 @@ Hibernate:
     from
         tb_cliente cliente0_
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:41 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[out 23, 2025 4:53:32 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:41 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:32 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:41 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:32 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:41 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:32 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@53f7a906] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:41 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     drop table tb_cliente if exists" via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
@@ -3533,7 +3533,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "tb_cliente" bec
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:41 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     drop table tb_produto if exists" via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
@@ -3610,9 +3610,9 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "tb_produto" bec
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:41 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:32 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7b7068d8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:41 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     create table tb_cliente (
        id bigint not null,
@@ -3721,7 +3721,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "tb_cliente" already e
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:41 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     create table tb_produto (
        id bigint not null,
@@ -3821,7 +3821,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "tb_produto" already e
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:41 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table tb_cliente 
        add constraint uk_cliente_cpf unique (cpf)" via JDBC Statement
@@ -3903,7 +3903,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "uk_cliente_cpf" 
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:41 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table tb_produto 
        add constraint uk_produto_codigo unique (codigo)" via JDBC Statement
@@ -3985,15 +3985,15 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "uk_produto_codig
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 56 more
 
-out 22, 2025 7:04:41 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:32 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:41 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:32 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+out 23, 2025 4:53:33 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
 ]]></system-err>
   </testcase>
-  <testcase name="deveFalharSeSaldoInsuficiente" classname="dev.fabiuscaesar.vendasonline.dao.EstoqueDAOTest" time="0.117">
+  <testcase name="deveFalharSeSaldoInsuficiente" classname="dev.fabiuscaesar.vendasonline.dao.EstoqueDAOTest" time="0.179">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -4192,37 +4192,37 @@ Hibernate:
     from
         tb_produto
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+    <system-err><![CDATA[out 23, 2025 4:53:33 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:41 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+out 23, 2025 4:53:33 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:33 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:33 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:33 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:33 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:33 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:41 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:33 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:41 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:33 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:41 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:33 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1d6f77d7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:41 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:33 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@65e620b0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:41 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:33 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:41 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:33 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
 ]]></system-err>
   </testcase>
-  <testcase name="incrementarNaoAlteraQuandoQtdNaoPositiva" classname="dev.fabiuscaesar.vendasonline.dao.EstoqueDAOTest" time="0.033">
+  <testcase name="incrementarNaoAlteraQuandoQtdNaoPositiva" classname="dev.fabiuscaesar.vendasonline.dao.EstoqueDAOTest" time="0.054">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -4279,7 +4279,7 @@ Hibernate:
         tb_produto
 ]]></system-out>
   </testcase>
-  <testcase name="deveIncrementar" classname="dev.fabiuscaesar.vendasonline.dao.EstoqueDAOTest" time="0.02">
+  <testcase name="deveIncrementar" classname="dev.fabiuscaesar.vendasonline.dao.EstoqueDAOTest" time="0.054">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -4344,7 +4344,7 @@ Hibernate:
         tb_produto
 ]]></system-out>
   </testcase>
-  <testcase name="decrementarFalhaSeNaoExisteEstoque" classname="dev.fabiuscaesar.vendasonline.dao.EstoqueDAOTest" time="0.024">
+  <testcase name="decrementarFalhaSeNaoExisteEstoque" classname="dev.fabiuscaesar.vendasonline.dao.EstoqueDAOTest" time="0.025">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -4401,7 +4401,7 @@ Hibernate:
         tb_produto
 ]]></system-out>
   </testcase>
-  <testcase name="decrementarNaoAlteraQuandoQtdNaoPositiva" classname="dev.fabiuscaesar.vendasonline.dao.EstoqueDAOTest" time="0.03">
+  <testcase name="decrementarNaoAlteraQuandoQtdNaoPositiva" classname="dev.fabiuscaesar.vendasonline.dao.EstoqueDAOTest" time="0.032">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -4458,7 +4458,7 @@ Hibernate:
         tb_produto
 ]]></system-out>
   </testcase>
-  <testcase name="deveDecrementarComSaldoSuficiente" classname="dev.fabiuscaesar.vendasonline.dao.EstoqueDAOTest" time="0.018">
+  <testcase name="deveDecrementarComSaldoSuficiente" classname="dev.fabiuscaesar.vendasonline.dao.EstoqueDAOTest" time="0.019">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -4524,7 +4524,7 @@ Hibernate:
         tb_produto
 ]]></system-out>
   </testcase>
-  <testcase name="excluir" classname="dev.fabiuscaesar.vendasonline.dao.ProdutoDAOTest" time="0.438">
+  <testcase name="excluir" classname="dev.fabiuscaesar.vendasonline.dao.ProdutoDAOTest" time="0.315">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -4709,39 +4709,39 @@ Hibernate:
     from
         tb_produto produto0_
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+    <system-err><![CDATA[out 23, 2025 4:53:33 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:41 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+out 23, 2025 4:53:33 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:33 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:33 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:33 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:33 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:41 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:33 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:41 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:33 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:42 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:33 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:42 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:33 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@20890a1a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:42 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:33 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@70a24f9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:42 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:33 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:42 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:33 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+out 23, 2025 4:53:33 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
 ]]></system-err>
   </testcase>
-  <testcase name="salvar" classname="dev.fabiuscaesar.vendasonline.dao.ProdutoDAOTest" time="0.313">
+  <testcase name="salvar" classname="dev.fabiuscaesar.vendasonline.dao.ProdutoDAOTest" time="0.342">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -4914,37 +4914,37 @@ Hibernate:
     from
         tb_produto produto0_
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:42 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[out 23, 2025 4:53:34 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:42 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:34 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:42 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:34 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:42 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:34 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@dbc7e0a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:42 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:34 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@636fccb0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:42 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:34 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:42 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:34 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
 ]]></system-err>
   </testcase>
-  <testcase name="alterarProduto" classname="dev.fabiuscaesar.vendasonline.dao.ProdutoDAOTest" time="0.211">
+  <testcase name="alterarProduto" classname="dev.fabiuscaesar.vendasonline.dao.ProdutoDAOTest" time="0.3">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -5140,37 +5140,37 @@ Hibernate:
     from
         tb_produto produto0_
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:42 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[out 23, 2025 4:53:34 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:42 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:34 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:42 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:34 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:42 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:34 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7a78d380] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:42 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:34 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2e1291a4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:42 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:34 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:42 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:34 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
 ]]></system-err>
   </testcase>
-  <testcase name="buscarTodos" classname="dev.fabiuscaesar.vendasonline.dao.ProdutoDAOTest" time="0.221">
+  <testcase name="buscarTodos" classname="dev.fabiuscaesar.vendasonline.dao.ProdutoDAOTest" time="0.276">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -5366,37 +5366,37 @@ Hibernate:
     from
         tb_produto produto0_
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:42 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[out 23, 2025 4:53:34 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:42 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:34 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:42 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:34 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:43 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:34 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2299f6d7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:43 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:34 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5cd701e4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:43 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:34 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:43 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:34 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-out 22, 2025 7:04:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+out 23, 2025 4:53:34 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
 ]]></system-err>
   </testcase>
-  <testcase name="pesquisar" classname="dev.fabiuscaesar.vendasonline.dao.ProdutoDAOTest" time="0.218">
+  <testcase name="pesquisar" classname="dev.fabiuscaesar.vendasonline.dao.ProdutoDAOTest" time="0.297">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -5569,37 +5569,37 @@ Hibernate:
     from
         tb_produto produto0_
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:43 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[out 23, 2025 4:53:34 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:43 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:35 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:43 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:35 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:43 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:35 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@70ce2fb2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:43 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:35 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@64688978] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:43 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:35 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:43 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:35 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-out 22, 2025 7:04:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+out 23, 2025 4:53:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
 ]]></system-err>
   </testcase>
-  <testcase name="removerApenasUmProduto" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.138">
+  <testcase name="removerApenasUmProduto" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.162">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -5824,35 +5824,35 @@ Hibernate:
     from
         tb_cliente
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:43 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[out 23, 2025 4:53:35 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:43 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:35 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:43 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:35 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:43 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:35 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4ede8888] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:43 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:35 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@571db8b4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:43 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:35 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:43 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:35 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
 ]]></system-err>
   </testcase>
-  <testcase name="salvarVendaMesmoCodigoExistente" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.022">
+  <testcase name="salvarVendaMesmoCodigoExistente" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.033">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -5933,14 +5933,14 @@ Hibernate:
     from
         tb_cliente
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:43 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+    <system-err><![CDATA[out 23, 2025 4:53:35 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
 WARN: SQL Error: 23505, SQLState: 23505
-out 22, 2025 7:04:43 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+out 23, 2025 4:53:35 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
 ERROR: Unique index or primary key violation: "PUBLIC.uk_venda_codigo_INDEX_F ON PUBLIC.tb_venda(codigo NULLS FIRST) VALUES ( /* 2 */ 'DUP' )"; SQL statement:
 insert into tb_venda (id_cliente, codigo, data_venda, status, valor_total, id) values (?, ?, ?, ?, ?, ?) [23505-224]
 ]]></system-err>
   </testcase>
-  <testcase name="finalizarVenda" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.034">
+  <testcase name="finalizarVenda" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.085">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -6046,7 +6046,7 @@ Hibernate:
         tb_cliente
 ]]></system-out>
   </testcase>
-  <testcase name="cancelarVenda" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.026">
+  <testcase name="cancelarVenda" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.081">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -6099,304 +6099,6 @@ Hibernate:
         (id_produto, quantidade, valor_total, id_venda, id) 
     values
         (?, ?, ?, ?, ?)
-Hibernate: 
-    select
-        venda0_.id as id1_4_,
-        venda0_.id_cliente as id_clien6_4_,
-        venda0_.codigo as codigo2_4_,
-        venda0_.data_venda as data_ven3_4_,
-        venda0_.status as status4_4_,
-        venda0_.valor_total as valor_to5_4_ 
-    from
-        tb_venda venda0_ 
-    where
-        venda0_.codigo=?
-Hibernate: 
-    update
-        tb_venda 
-    set
-        id_cliente=?,
-        codigo=?,
-        data_venda=?,
-        status=?,
-        valor_total=? 
-    where
-        id=?
-Hibernate: 
-    delete 
-    from
-        tb_produto_quantidade 
-    where
-        id=?
-Hibernate: 
-    select
-        venda0_.id as id1_4_,
-        venda0_.id_cliente as id_clien6_4_,
-        venda0_.codigo as codigo2_4_,
-        venda0_.data_venda as data_ven3_4_,
-        venda0_.status as status4_4_,
-        venda0_.valor_total as valor_to5_4_ 
-    from
-        tb_venda venda0_ 
-    where
-        venda0_.codigo=?
-Hibernate: 
-    delete 
-    from
-        tb_produto_quantidade
-Hibernate: 
-    delete 
-    from
-        tb_venda
-Hibernate: 
-    delete 
-    from
-        tb_produto
-Hibernate: 
-    delete 
-    from
-        tb_cliente
-]]></system-out>
-  </testcase>
-  <testcase name="salvar" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.027">
-    <system-out><![CDATA[Hibernate: 
-    delete 
-    from
-        tb_produto_quantidade
-Hibernate: 
-    delete 
-    from
-        tb_venda
-Hibernate: 
-    delete 
-    from
-        tb_produto
-Hibernate: 
-    delete 
-    from
-        tb_cliente
-Hibernate: 
-    call next value for sq_cliente
-Hibernate: 
-    insert 
-    into
-        tb_cliente
-        (cep, cidade, cpf, endereco, estado, nome, numero, tel, id) 
-    values
-        (?, ?, ?, ?, ?, ?, ?, ?, ?)
-Hibernate: 
-    call next value for sq_produto
-Hibernate: 
-    insert 
-    into
-        tb_produto
-        (codigo, descricao, modelo, nome, valor, id) 
-    values
-        (?, ?, ?, ?, ?, ?)
-Hibernate: 
-    call next value for sq_venda
-Hibernate: 
-    call next value for sq_prod_qtd
-Hibernate: 
-    insert 
-    into
-        tb_venda
-        (id_cliente, codigo, data_venda, status, valor_total, id) 
-    values
-        (?, ?, ?, ?, ?, ?)
-Hibernate: 
-    insert 
-    into
-        tb_produto_quantidade
-        (id_produto, quantidade, valor_total, id_venda, id) 
-    values
-        (?, ?, ?, ?, ?)
-Hibernate: 
-    select
-        venda0_.id as id1_4_,
-        venda0_.id_cliente as id_clien6_4_,
-        venda0_.codigo as codigo2_4_,
-        venda0_.data_venda as data_ven3_4_,
-        venda0_.status as status4_4_,
-        venda0_.valor_total as valor_to5_4_ 
-    from
-        tb_venda venda0_ 
-    where
-        venda0_.codigo=?
-Hibernate: 
-    delete 
-    from
-        tb_produto_quantidade
-Hibernate: 
-    delete 
-    from
-        tb_venda
-Hibernate: 
-    delete 
-    from
-        tb_produto
-Hibernate: 
-    delete 
-    from
-        tb_cliente
-]]></system-out>
-  </testcase>
-  <testcase name="tentarAdicionarProdutosVendaFinalizada" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.023">
-    <system-out><![CDATA[Hibernate: 
-    delete 
-    from
-        tb_produto_quantidade
-Hibernate: 
-    delete 
-    from
-        tb_venda
-Hibernate: 
-    delete 
-    from
-        tb_produto
-Hibernate: 
-    delete 
-    from
-        tb_cliente
-Hibernate: 
-    call next value for sq_cliente
-Hibernate: 
-    insert 
-    into
-        tb_cliente
-        (cep, cidade, cpf, endereco, estado, nome, numero, tel, id) 
-    values
-        (?, ?, ?, ?, ?, ?, ?, ?, ?)
-Hibernate: 
-    call next value for sq_produto
-Hibernate: 
-    insert 
-    into
-        tb_produto
-        (codigo, descricao, modelo, nome, valor, id) 
-    values
-        (?, ?, ?, ?, ?, ?)
-Hibernate: 
-    call next value for sq_venda
-Hibernate: 
-    call next value for sq_prod_qtd
-Hibernate: 
-    insert 
-    into
-        tb_venda
-        (id_cliente, codigo, data_venda, status, valor_total, id) 
-    values
-        (?, ?, ?, ?, ?, ?)
-Hibernate: 
-    insert 
-    into
-        tb_produto_quantidade
-        (id_produto, quantidade, valor_total, id_venda, id) 
-    values
-        (?, ?, ?, ?, ?)
-Hibernate: 
-    select
-        venda0_.id as id1_4_,
-        venda0_.id_cliente as id_clien6_4_,
-        venda0_.codigo as codigo2_4_,
-        venda0_.data_venda as data_ven3_4_,
-        venda0_.status as status4_4_,
-        venda0_.valor_total as valor_to5_4_ 
-    from
-        tb_venda venda0_ 
-    where
-        venda0_.codigo=?
-Hibernate: 
-    update
-        tb_venda 
-    set
-        id_cliente=?,
-        codigo=?,
-        data_venda=?,
-        status=?,
-        valor_total=? 
-    where
-        id=?
-Hibernate: 
-    delete 
-    from
-        tb_produto_quantidade
-Hibernate: 
-    delete 
-    from
-        tb_venda
-Hibernate: 
-    delete 
-    from
-        tb_produto
-Hibernate: 
-    delete 
-    from
-        tb_cliente
-]]></system-out>
-  </testcase>
-  <testcase name="removerTodosProdutos" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.026">
-    <system-out><![CDATA[Hibernate: 
-    delete 
-    from
-        tb_produto_quantidade
-Hibernate: 
-    delete 
-    from
-        tb_venda
-Hibernate: 
-    delete 
-    from
-        tb_produto
-Hibernate: 
-    delete 
-    from
-        tb_cliente
-Hibernate: 
-    call next value for sq_cliente
-Hibernate: 
-    insert 
-    into
-        tb_cliente
-        (cep, cidade, cpf, endereco, estado, nome, numero, tel, id) 
-    values
-        (?, ?, ?, ?, ?, ?, ?, ?, ?)
-Hibernate: 
-    call next value for sq_produto
-Hibernate: 
-    insert 
-    into
-        tb_produto
-        (codigo, descricao, modelo, nome, valor, id) 
-    values
-        (?, ?, ?, ?, ?, ?)
-Hibernate: 
-    call next value for sq_venda
-Hibernate: 
-    call next value for sq_prod_qtd
-Hibernate: 
-    insert 
-    into
-        tb_venda
-        (id_cliente, codigo, data_venda, status, valor_total, id) 
-    values
-        (?, ?, ?, ?, ?, ?)
-Hibernate: 
-    insert 
-    into
-        tb_produto_quantidade
-        (id_produto, quantidade, valor_total, id_venda, id) 
-    values
-        (?, ?, ?, ?, ?)
-Hibernate: 
-    call next value for sq_produto
-Hibernate: 
-    insert 
-    into
-        tb_produto
-        (codigo, descricao, modelo, nome, valor, id) 
-    values
-        (?, ?, ?, ?, ?, ?)
 Hibernate: 
     select
         venda0_.id as id1_4_,
@@ -6427,6 +6129,18 @@ Hibernate:
     where
         id=?
 Hibernate: 
+    select
+        venda0_.id as id1_4_,
+        venda0_.id_cliente as id_clien6_4_,
+        venda0_.codigo as codigo2_4_,
+        venda0_.data_venda as data_ven3_4_,
+        venda0_.status as status4_4_,
+        venda0_.valor_total as valor_to5_4_ 
+    from
+        tb_venda venda0_ 
+    where
+        venda0_.codigo=?
+Hibernate: 
     delete 
     from
         tb_produto_quantidade
@@ -6444,7 +6158,293 @@ Hibernate:
         tb_cliente
 ]]></system-out>
   </testcase>
-  <testcase name="adicionarMaisProdutosDiferentes" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.039">
+  <testcase name="salvar" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.064">
+    <system-out><![CDATA[Hibernate: 
+    delete 
+    from
+        tb_produto_quantidade
+Hibernate: 
+    delete 
+    from
+        tb_venda
+Hibernate: 
+    delete 
+    from
+        tb_produto
+Hibernate: 
+    delete 
+    from
+        tb_cliente
+Hibernate: 
+    call next value for sq_cliente
+Hibernate: 
+    insert 
+    into
+        tb_cliente
+        (cep, cidade, cpf, endereco, estado, nome, numero, tel, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    call next value for sq_produto
+Hibernate: 
+    insert 
+    into
+        tb_produto
+        (codigo, descricao, modelo, nome, valor, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    call next value for sq_venda
+Hibernate: 
+    call next value for sq_prod_qtd
+Hibernate: 
+    insert 
+    into
+        tb_venda
+        (id_cliente, codigo, data_venda, status, valor_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_produto_quantidade
+        (id_produto, quantidade, valor_total, id_venda, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        venda0_.id as id1_4_,
+        venda0_.id_cliente as id_clien6_4_,
+        venda0_.codigo as codigo2_4_,
+        venda0_.data_venda as data_ven3_4_,
+        venda0_.status as status4_4_,
+        venda0_.valor_total as valor_to5_4_ 
+    from
+        tb_venda venda0_ 
+    where
+        venda0_.codigo=?
+Hibernate: 
+    delete 
+    from
+        tb_produto_quantidade
+Hibernate: 
+    delete 
+    from
+        tb_venda
+Hibernate: 
+    delete 
+    from
+        tb_produto
+Hibernate: 
+    delete 
+    from
+        tb_cliente
+]]></system-out>
+  </testcase>
+  <testcase name="tentarAdicionarProdutosVendaFinalizada" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.136">
+    <system-out><![CDATA[Hibernate: 
+    delete 
+    from
+        tb_produto_quantidade
+Hibernate: 
+    delete 
+    from
+        tb_venda
+Hibernate: 
+    delete 
+    from
+        tb_produto
+Hibernate: 
+    delete 
+    from
+        tb_cliente
+Hibernate: 
+    call next value for sq_cliente
+Hibernate: 
+    insert 
+    into
+        tb_cliente
+        (cep, cidade, cpf, endereco, estado, nome, numero, tel, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    call next value for sq_produto
+Hibernate: 
+    insert 
+    into
+        tb_produto
+        (codigo, descricao, modelo, nome, valor, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    call next value for sq_venda
+Hibernate: 
+    call next value for sq_prod_qtd
+Hibernate: 
+    insert 
+    into
+        tb_venda
+        (id_cliente, codigo, data_venda, status, valor_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_produto_quantidade
+        (id_produto, quantidade, valor_total, id_venda, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        venda0_.id as id1_4_,
+        venda0_.id_cliente as id_clien6_4_,
+        venda0_.codigo as codigo2_4_,
+        venda0_.data_venda as data_ven3_4_,
+        venda0_.status as status4_4_,
+        venda0_.valor_total as valor_to5_4_ 
+    from
+        tb_venda venda0_ 
+    where
+        venda0_.codigo=?
+Hibernate: 
+    update
+        tb_venda 
+    set
+        id_cliente=?,
+        codigo=?,
+        data_venda=?,
+        status=?,
+        valor_total=? 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        tb_produto_quantidade
+Hibernate: 
+    delete 
+    from
+        tb_venda
+Hibernate: 
+    delete 
+    from
+        tb_produto
+Hibernate: 
+    delete 
+    from
+        tb_cliente
+]]></system-out>
+  </testcase>
+  <testcase name="removerTodosProdutos" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.597">
+    <system-out><![CDATA[Hibernate: 
+    delete 
+    from
+        tb_produto_quantidade
+Hibernate: 
+    delete 
+    from
+        tb_venda
+Hibernate: 
+    delete 
+    from
+        tb_produto
+Hibernate: 
+    delete 
+    from
+        tb_cliente
+Hibernate: 
+    call next value for sq_cliente
+Hibernate: 
+    insert 
+    into
+        tb_cliente
+        (cep, cidade, cpf, endereco, estado, nome, numero, tel, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    call next value for sq_produto
+Hibernate: 
+    insert 
+    into
+        tb_produto
+        (codigo, descricao, modelo, nome, valor, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    call next value for sq_venda
+Hibernate: 
+    call next value for sq_prod_qtd
+Hibernate: 
+    insert 
+    into
+        tb_venda
+        (id_cliente, codigo, data_venda, status, valor_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_produto_quantidade
+        (id_produto, quantidade, valor_total, id_venda, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    call next value for sq_produto
+Hibernate: 
+    insert 
+    into
+        tb_produto
+        (codigo, descricao, modelo, nome, valor, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        venda0_.id as id1_4_,
+        venda0_.id_cliente as id_clien6_4_,
+        venda0_.codigo as codigo2_4_,
+        venda0_.data_venda as data_ven3_4_,
+        venda0_.status as status4_4_,
+        venda0_.valor_total as valor_to5_4_ 
+    from
+        tb_venda venda0_ 
+    where
+        venda0_.codigo=?
+Hibernate: 
+    update
+        tb_venda 
+    set
+        id_cliente=?,
+        codigo=?,
+        data_venda=?,
+        status=?,
+        valor_total=? 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        tb_produto_quantidade 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        tb_produto_quantidade
+Hibernate: 
+    delete 
+    from
+        tb_venda
+Hibernate: 
+    delete 
+    from
+        tb_produto
+Hibernate: 
+    delete 
+    from
+        tb_cliente
+]]></system-out>
+  </testcase>
+  <testcase name="adicionarMaisProdutosDiferentes" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.002">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -6556,7 +6556,7 @@ Hibernate:
         tb_cliente
 ]]></system-out>
   </testcase>
-  <testcase name="adicionarMaisProdutosDoMesmo" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.054">
+  <testcase name="adicionarMaisProdutosDoMesmo" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.149">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -6660,7 +6660,7 @@ Hibernate:
         tb_cliente
 ]]></system-out>
   </testcase>
-  <testcase name="removerProduto" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.056">
+  <testcase name="removerProduto" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.002">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -6752,7 +6752,7 @@ Hibernate:
         tb_cliente
 ]]></system-out>
   </testcase>
-  <testcase name="pesquisar" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.021">
+  <testcase name="pesquisar" classname="dev.fabiuscaesar.vendasonline.dao.VendaDAOTest" time="0.005">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -6835,7 +6835,7 @@ Hibernate:
         tb_cliente
 ]]></system-out>
   </testcase>
-  <testcase name="salvarCliente" classname="dev.fabiuscaesar.vendasonline.service.ClienteServiceTest" time="0.035">
+  <testcase name="salvarCliente" classname="dev.fabiuscaesar.vendasonline.service.ClienteServiceTest" time="0.001">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -7003,37 +7003,37 @@ Hibernate:
     from
         tb_cliente
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+    <system-err><![CDATA[out 23, 2025 4:53:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:44 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+out 23, 2025 4:53:36 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:44 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:36 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:44 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:36 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:44 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:36 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1906f982] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:44 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:36 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5444f1c3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:44 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:36 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:44 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:36 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
 ]]></system-err>
   </testcase>
-  <testcase name="excluirCliente" classname="dev.fabiuscaesar.vendasonline.service.ClienteServiceTest" time="0.007">
+  <testcase name="excluirCliente" classname="dev.fabiuscaesar.vendasonline.service.ClienteServiceTest" time="0.002">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -7074,7 +7074,7 @@ Hibernate:
         tb_cliente
 ]]></system-out>
   </testcase>
-  <testcase name="pesquisarCliente" classname="dev.fabiuscaesar.vendasonline.service.ClienteServiceTest" time="0.006">
+  <testcase name="pesquisarCliente" classname="dev.fabiuscaesar.vendasonline.service.ClienteServiceTest" time="0.002">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -7109,7 +7109,7 @@ Hibernate:
         tb_cliente
 ]]></system-out>
   </testcase>
-  <testcase name="alterarCliente" classname="dev.fabiuscaesar.vendasonline.service.ClienteServiceTest" time="0.013">
+  <testcase name="alterarCliente" classname="dev.fabiuscaesar.vendasonline.service.ClienteServiceTest" time="0.001">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -7158,7 +7158,7 @@ Hibernate:
         tb_cliente
 ]]></system-out>
   </testcase>
-  <testcase name="deveCriarRegistroDeEstoqueSeAusenteEInicializarEmZero" classname="dev.fabiuscaesar.vendasonline.service.EstoqueServiceTest" time="0.029">
+  <testcase name="deveCriarRegistroDeEstoqueSeAusenteEInicializarEmZero" classname="dev.fabiuscaesar.vendasonline.service.EstoqueServiceTest" time="0.033">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -7354,37 +7354,37 @@ Hibernate:
     from
         tb_produto
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+    <system-err><![CDATA[out 23, 2025 4:53:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:44 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+out 23, 2025 4:53:36 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:44 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:36 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:44 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:36 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:44 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:36 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@32f14274] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:44 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:37 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7af56b26] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:44 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:37 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:44 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:37 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
 ]]></system-err>
   </testcase>
-  <testcase name="deveIncrementarEDecrementarComSaldoSuficiente" classname="dev.fabiuscaesar.vendasonline.service.EstoqueServiceTest" time="0.029">
+  <testcase name="deveIncrementarEDecrementarComSaldoSuficiente" classname="dev.fabiuscaesar.vendasonline.service.EstoqueServiceTest" time="0.041">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -7478,7 +7478,7 @@ Hibernate:
         tb_produto
 ]]></system-out>
   </testcase>
-  <testcase name="deveFalharAoDecrementarComSaldoInsuficiente" classname="dev.fabiuscaesar.vendasonline.service.EstoqueServiceTest" time="0.021">
+  <testcase name="deveFalharAoDecrementarComSaldoInsuficiente" classname="dev.fabiuscaesar.vendasonline.service.EstoqueServiceTest" time="0.025">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -7562,7 +7562,7 @@ Hibernate:
         tb_produto
 ]]></system-out>
   </testcase>
-  <testcase name="excluir" classname="dev.fabiuscaesar.vendasonline.service.ProdutoServiceTest" time="0.021">
+  <testcase name="excluir" classname="dev.fabiuscaesar.vendasonline.service.ProdutoServiceTest" time="0.02">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -7733,37 +7733,37 @@ Hibernate:
     from
         tb_produto
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+    <system-err><![CDATA[out 23, 2025 4:53:37 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:44 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+out 23, 2025 4:53:37 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:37 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:37 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:37 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:37 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:37 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:44 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:37 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:44 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:37 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:44 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:37 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@141234df] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:44 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:37 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@65698020] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:44 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:37 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:44 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:37 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
 ]]></system-err>
   </testcase>
-  <testcase name="salvar" classname="dev.fabiuscaesar.vendasonline.service.ProdutoServiceTest" time="0.01">
+  <testcase name="salvar" classname="dev.fabiuscaesar.vendasonline.service.ProdutoServiceTest" time="0.007">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -7783,7 +7783,7 @@ Hibernate:
         tb_produto
 ]]></system-out>
   </testcase>
-  <testcase name="alterarProduto" classname="dev.fabiuscaesar.vendasonline.service.ProdutoServiceTest" time="0.011">
+  <testcase name="alterarProduto" classname="dev.fabiuscaesar.vendasonline.service.ProdutoServiceTest" time="0.013">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -7814,7 +7814,7 @@ Hibernate:
         tb_produto
 ]]></system-out>
   </testcase>
-  <testcase name="pesquisar" classname="dev.fabiuscaesar.vendasonline.service.ProdutoServiceTest" time="0.005">
+  <testcase name="pesquisar" classname="dev.fabiuscaesar.vendasonline.service.ProdutoServiceTest" time="0.007">
     <system-out><![CDATA[Hibernate: 
     delete 
     from
@@ -7834,7 +7834,7 @@ Hibernate:
         tb_produto
 ]]></system-out>
   </testcase>
-  <testcase name="deveFinalizarVendaEAbaixarEstoque" classname="dev.fabiuscaesar.vendasonline.service.VendaServiceTest" time="0.09">
+  <testcase name="deveFinalizarVendaEAbaixarEstoque" classname="dev.fabiuscaesar.vendasonline.service.VendaServiceTest" time="0.114">
     <system-out><![CDATA[Hibernate: 
     
     drop table tb_cliente if exists
@@ -8209,37 +8209,37 @@ Hibernate:
     from
         tb_cliente
 ]]></system-out>
-    <system-err><![CDATA[out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+    <system-err><![CDATA[out 23, 2025 4:53:37 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
 INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:44 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+out 23, 2025 4:53:37 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: test
 	...]
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+out 23, 2025 4:53:37 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:37 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:vendasonline_test;MODE=PostgreSQL;DB_CLOSE_DELAY=0;DATABASE_TO_UPPER=false]
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:37 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+out 23, 2025 4:53:37 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-out 22, 2025 7:04:44 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+out 23, 2025 4:53:37 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-out 22, 2025 7:04:44 PM org.hibernate.dialect.Dialect <init>
+out 23, 2025 4:53:37 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-out 22, 2025 7:04:44 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
+out 23, 2025 4:53:37 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resoveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-out 22, 2025 7:04:44 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:37 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7282f7b1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:44 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+out 23, 2025 4:53:37 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7263b0c4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-out 22, 2025 7:04:44 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+out 23, 2025 4:53:37 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
 INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e84f3c8'
-out 22, 2025 7:04:45 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+out 23, 2025 4:53:37 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
 ]]></system-err>
   </testcase>
-  <testcase name="deveCancelarVendaFinalizadaEDevolverEstoque" classname="dev.fabiuscaesar.vendasonline.service.VendaServiceTest" time="0.053">
+  <testcase name="deveCancelarVendaFinalizadaEDevolverEstoque" classname="dev.fabiuscaesar.vendasonline.service.VendaServiceTest" time="0.048">
     <system-out><![CDATA[Hibernate: 
     delete 
     from

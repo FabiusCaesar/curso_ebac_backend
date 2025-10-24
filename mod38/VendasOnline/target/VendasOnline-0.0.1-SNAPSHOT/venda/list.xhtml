@@ -136,10 +136,12 @@
                 <p:autoComplete id="cliente"
                                 value="#{vendaController.venda.cliente}"
                                 completeMethod="#{vendaController.filtrarClientes}"
-                                var="c" itemLabel="#{c.nome} - #{c.cpf}" itemValue="#{c}"
+                                var="c"
+                                itemLabel="#{empty c or empty c.nome ? '' : c.nome}"
+                                itemValue="#{c}"
                                 dropdown="true" forceSelection="true"
                                 converter="clienteConverter"
-                                placeholder="Busque por nome ou CPF" />
+                                placeholder="Busque por nome />
 
                 <p:outputLabel for="data" value="Data da venda" />
                 <p:datePicker id="data" value="#{vendaController.dataVenda}" showIcon="true"

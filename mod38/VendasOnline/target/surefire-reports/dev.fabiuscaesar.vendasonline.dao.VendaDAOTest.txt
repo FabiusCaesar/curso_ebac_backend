@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: dev.fabiuscaesar.vendasonline.dao.VendaDAOTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.553 s -- in dev.fabiuscaesar.vendasonline.dao.VendaDAOTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.474 s -- in dev.fabiuscaesar.vendasonline.dao.VendaDAOTest
